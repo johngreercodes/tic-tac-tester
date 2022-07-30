@@ -5,9 +5,9 @@ describe('happy path tests for tic-tac-toe', () => {
 
   it('loads a 3x3 grid', () => {
     cy.visit('https://john-greer-07-29-22.surge.sh/')
-    cy.get('#number')
-      .type('3')
+    cy.get('#number').type('3')
     cy.contains('Play').click()
+    cy.get('#table').should('be.visible')
   })
 
 })
