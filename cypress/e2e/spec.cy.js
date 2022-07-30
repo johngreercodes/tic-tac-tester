@@ -1,5 +1,5 @@
-describe('first test', () => {
-  it('visits the codepen site', () => {
+describe('happy path tests for tic-tac-toe', () => {
+  it('visits the site', () => {
     cy.visit('https://john-greer-07-29-22.surge.sh/') // Given the user visits 'https://john-greer-07-29-22.surge.sh/'
   })
 
@@ -7,6 +7,7 @@ describe('first test', () => {
     cy.visit('https://john-greer-07-29-22.surge.sh/')
     cy.get('#number')
       .type('3')
+    cy.contains('Play').click()
   })
 
 })
