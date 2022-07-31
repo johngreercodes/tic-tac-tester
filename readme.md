@@ -1,6 +1,6 @@
 ## tic tac tester
 
-[Link to bugs found after manual testing](https://docs.google.com/document/d/1VrIW_LSaSX-TvN4kO4JjKJYYIBHfljdd5igBaMaEO_g/edit?usp=sharing)
+[Link to bugs found after manual testing](https://docs.google.com/document/d/1VrIW_LSaSX-TvN4kO4JjKJYYIBHfljdd5igBaMaEO_g/edit?usp=sharing){:target="_blank"}
 
 to do
 - [x] test for X win
