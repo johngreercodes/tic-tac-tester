@@ -3,10 +3,10 @@ describe('tic tac toe tests', () => {
   beforeEach(() => {
     cy.visit('https://john-greer-07-29-22.surge.sh/')
     cy.get('#number').should('be.visible')
+    cy.get('#start').should('be.visible')
     cy.get('#number').type('3')
     cy.contains('Play').click()
     cy.get('#table').should('be.visible')
-    cy.get('#start').should('be.visible')
   })
 
   afterEach(() => {
@@ -30,7 +30,9 @@ describe('tic tac toe tests', () => {
       .click()
       .should('have.text','X') 
 
-    cy.get('#endgame').should('have.text', `Congratulations player X! You've won. Refresh to play again!`)
+    cy.get('#endgame')
+      .should('be.visible')
+      .should('have.text', `Congratulations player X! You've won. Refresh to play again!`)
 
   })
 
@@ -54,7 +56,9 @@ describe('tic tac toe tests', () => {
       .click() 
       .should('have.text','O')
 
-    cy.get('#endgame').should('have.text', `Congratulations player O! You've won. Refresh to play again!`)
+    cy.get('#endgame')
+      .should('be.visible')
+      .should('have.text', `Congratulations player O! You've won. Refresh to play again!`)
 
   })
 
